@@ -11,10 +11,10 @@ export default function WelcomePage() {
   return (
     <section className="welcome-page">
       <header>
-      <Link to="/characters/" ><h1>Characters</h1></Link>
-        <Link to="/">
+      <Link  to="/characters/" ><h1 style={{width: `140px` , textDecoration: `none`,  backgroundColor: `blue`, borderRadius: `2rem`}}>Characters</h1></Link>
+        {/* <Link to="/"><h1>Home</h1></Link> */}
         <h1>Welcome to the ultimate fan site!</h1>
-        </Link>
+        
         
         <img
           className="main-img"
@@ -25,7 +25,6 @@ export default function WelcomePage() {
         {/* <Route path="/character/" component={CharacterList}></Route>  */}
         
         {/* <Route path="/character/" component={CharacterList}></Route>  */}
-        <CharacterList setCharacters={setCharacters}/>
         {/* <Route path="/character/:id" render={props => <CharacterList {...props} addToCharacters={addToCharacters}/>}/> */}
         
 
