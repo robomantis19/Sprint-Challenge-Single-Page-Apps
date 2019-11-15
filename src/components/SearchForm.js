@@ -2,31 +2,33 @@ import React, { useState, useEffect } from "react";
 
 export default function SearchForm(props) {
  console.log("Characters props", props.characters)
-  const [searchWord, setSearchWord] = useState(""); 
-  const [searchfilter, setSearchFilter] = useState([]); 
+  // const [searchWord, setSearchWord] = useState(""); 
+  // const [searchfilter, setSearchFilter] = useState([]); 
 
   
 
 
-  const handleChange = (event) => { 
-    setSearchWord(event.target.value)
-  }
+  // const handleChange = (event) => { 
+  //   setSearchWord(event.target.value)
+  // }
 
-  useEffect(() => { 
-    if(searchWord != ""){
-      const output = props.characters.filter((cartoon) => { 
-        console.log(searchWord); 
-        return cartoon.name.toLowerCase().includes(searchWord.toLowerCase())
-      });
-      console.log("results", output);
-      setSearchFilter(output);  
-    }else if(searchWord === "") {
-      setSearchFilter([]);
-    }
-  },[props.characters])
+  // useEffect(() => { 
+  //   if(searchWord != ""){
+  //     const output = props.characters.filter((cartoon) => { 
+  //       console.log(searchWord); 
+  //       return cartoon.name.toLowerCase().includes(searchWord.toLowerCase())
+  //     });
+  //     console.log('hello world')
+  //     console.log("results", output);
+  //     setSearchFilter(output);  
+  //     console.log("search filter", searchfilter)
+  //   }else if(searchWord === "") {
+  //     setSearchFilter([]);
+  //   }
+  // },[props.characters])
   return (
     <section className="search-form">
-     <form>
+     {/* <form>
        <label>
          Character Name:  
         <input
@@ -36,7 +38,7 @@ export default function SearchForm(props) {
         onChange={handleChange}>
         </input>
       </label>
-     </form>
+     </form> */}
     </section>
   );
 }
