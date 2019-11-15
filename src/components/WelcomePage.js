@@ -11,9 +11,11 @@ export default function WelcomePage() {
   return (
     <section className="welcome-page">
       <header>
+      <Link to="/characters/" ><h1>Characters</h1></Link>
         <Link to="/">
         <h1>Welcome to the ultimate fan site!</h1>
         </Link>
+        
         <img
           className="main-img"
           src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
@@ -21,7 +23,7 @@ export default function WelcomePage() {
         />
        
         {/* <Route path="/character/" component={CharacterList}></Route>  */}
-        <SearchForm characters={characters}/>
+        
         {/* <Route path="/character/" component={CharacterList}></Route>  */}
         <CharacterList setCharacters={setCharacters}/>
         {/* <Route path="/character/:id" render={props => <CharacterList {...props} addToCharacters={addToCharacters}/>}/> */}

@@ -69,6 +69,7 @@ export default function CharacterList(props) {
   console.log("search filter", searchfilter)
   return (
     <div>
+      <Link to="/" ><h1>Home</h1></Link>
         <section className="search-form">
         <form>
           <label>
