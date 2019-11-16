@@ -69,7 +69,7 @@ export default function CharacterList(props) {
   console.log("search filter", searchfilter)
   return (
     <div>
-      <Link to="/" ><h1 style={{width: `160px` , textAlign:`center`, textDecoration: `none`,  backgroundColor: `blue`, borderRadius: `2rem`}}>Home</h1></Link>
+      <Link to="/" style={{textDecoration: `none`}}><h1 style={{width: `160px` , fontSize:`1.7rem`, textAlign:`center`, textDecoration: `none`,  background: `rgb(169,211,233,.9)`,color: `rgb(216,139,121,.9)`, borderRadius: `2rem`}}>Home</h1></Link>
         <section className="search-form">
         <form>
           <label>

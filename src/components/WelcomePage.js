@@ -11,9 +11,9 @@ export default function WelcomePage() {
   return (
     <section className="welcome-page">
       <header>
-      <Link  to="/characters/" ><h1 style={{width: `140px` , textDecoration: `none`,  backgroundColor: `blue`, borderRadius: `2rem`}}>Characters</h1></Link>
+      <Link style={{textDecoration: `none`}} to="/characters/" ><h1 style={{width: `140px` ,  backgroundColor: `rgb(169,211,233,.9)`,  height: `30px`,paddingTop:`5px`,color: `rgb(216,139,121,.9)`, borderRadius: `2rem`}}>Characters</h1></Link>
         {/* <Link to="/"><h1>Home</h1></Link> */}
-        <h1>Welcome to the ultimate fan site!</h1>
+        <h1 style={{color: `rgb(216,139,121,.9)`}}>Welcome to the ultimate fan site!</h1>
         
         
         <img
